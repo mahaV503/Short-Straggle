@@ -1,0 +1,16 @@
+{
+  "name": "short-straggle",
+  "version": "1.0.0",
+  "description": "short straggle technique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "short",
+    "straggle",
+    "stocks"
+  ],
+  "author": "vishnu",
+  "license": "ISC"
+}
