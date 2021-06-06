@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {Container, Form, Jumbotron} from '../node_modules/react-bootstrap/';
+import {Button} from '../node_modules/react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+    <Jumbotron>
+      Short Straggle
+   </Jumbotron>
+    <Form>
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>index Value</Form.Label>
+    <Form.Control type="text" placeholder="Enter index" />
+    <Form.Text className="text-muted">
+      Like NIFTY BANK, NIFTY fullforms
+    </Form.Text>
+  </Form.Group>
+
+  <Form.Group >
+  <Form.Label>PE</Form.Label>
+    <Form.Control type="number" placeholder="PE" />
+  </Form.Group>
+  <Form.Group >
+  <Form.Label>CE</Form.Label>
+    <Form.Control type="number" placeholder="CE" />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+
+    
+    </Container>
   );
 }
 
